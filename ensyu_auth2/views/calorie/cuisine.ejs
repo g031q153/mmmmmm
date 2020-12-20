@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>カロリー計算サイト</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <p>ようこそカロリー計算サイトへ </p>
+    <h1>今日摂取した食事を登録</h1>
+    <form method="post" action="">
+      <p><%= cuisine %></p>
+        <div>
+            <label>摂取した食事のIDを入力：</label>
+            <input type="number" name="cuisine_id"/>
+        </div>
+        <div>
+            <label>摂取した量をg単位で入力：</label>
+            <input type="number" name="eclipse"/>
+        </div>
+        <p><input type="submit" value="送信する"></p>
+    </form>
+    <form>
+        <h1>摂取した食事がない場合</h1>
+        <input type="button" value="食事登録" onclick="location.href='http://localhost:3000/calorie/cuisine_insert'"/>
+    </form>
+  </body>
+</html>

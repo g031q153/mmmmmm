@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>カロリー計算サイト</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <p>ようこそカロリー計算サイトへ </p>
+    <h1>今日摂取した食事を材料から登録</h1>
+    <form method="post" action="">
+        <p><%= material %></p>
+        <div>
+            <label>摂取した材料のIDを入力：</label>
+            <input type="number" name="material_id"/>
+        </div>
+        <div>
+            <label>摂取した量をg単位で入力：</label>
+            <input type="number" step="0.01" name="volume"/>
+        </div>
+        <p><input type="submit" value="送信する"></p>
+    </form>
+    <form>
+        <h1>摂取した材料がない場合</h1>
+        <input type="button" value="材料登録" onclick="location.href='http://localhost:3000/calorie/material_insert'"/>
+    </form>
+  </body>
+</html>

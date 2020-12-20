@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>カロリー計算サイト</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <p>ようこそカロリー計算サイトへ </p>
+    <h1>カロリー計算結果</h1>
+    <h1>本日の摂取・消費カロリー</h1>
+    <p><%= date %></p>
+    <form method="post" action="">
+        <h1>日付から摂取・消費カロリーを表示</h1>
+        <div>
+            <label>検索したい年月日を入力(年-月-日)：</label>
+            <input type="date" name="day"/>
+        </div>
+        <p><input type="submit" value="送信する"></p>
+    </form>
+  </body>
+</html>
